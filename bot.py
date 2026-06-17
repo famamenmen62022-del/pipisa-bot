@@ -97,7 +97,14 @@ def main():
     app.add_handler(CommandHandler("top", top))
 
     print("Bot started")
+    import asyncio
+
+def main():
+    app = Application.builder().token(TOKEN).build()
+    print("Bot started")
     app.run_polling()
 
+if __name__ == "__main__":
+    main()
 
-main()
+
